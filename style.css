@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2c5f8c, #4a90c2);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.judul {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+nav {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav a {
+    color: #2c5f8c;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4a90c2;
+}
+
+.card {
+    background: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #2c5f8c;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e7ef;
+}
+
+.daftar-karya {
+    display: grid;
+    gap: 15px;
+}
+
+.karya-item {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #4a90c2;
+    transition: transform 0.3s;
+}
+
+.karya-item:hover {
+    transform: translateX(5px);
+}
+
+.karya-item h3 {
+    color: #2c5f8c;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #2c5f8c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+}
